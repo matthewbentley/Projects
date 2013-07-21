@@ -37,3 +37,11 @@ nosetests.xml
 # Komodo
 .komodotools/
 *.komodoproject
+
+# Lisp stuffs
+*.fasl
+
+# Emacs
+*~
+[#]*[#]
+.\#*
