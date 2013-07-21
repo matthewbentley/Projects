@@ -306,3 +306,8 @@ Graphics and Multimedia
 **Watermarking Application** – Have some pictures you want copyright protected? Add your own logo or text lightly across the background so that no one can simply steal your graphics off your site. Make a program that will add this watermark to the picture.
 
 **Turtle Graphics** – This is a common project where you create a floor of 20 x 20 squares. Using various commands you tell a turtle to draw a line on the floor. You have move forward, left or right, lift or drop pen etc. For added complexity, allow the program to read in the list of commands from a file. Do a search online for “Turtle Graphics” for more information.
+
+
+License
+--------
+Unless otherwise noted, all code in this repo is under the MIT license: see http://matthew.mit-license.org
