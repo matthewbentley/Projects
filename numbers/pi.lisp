@@ -32,11 +32,11 @@
     (floor (/ betterpi (expt 10 10)))))
 
 (defun piformat (how-many input)
-  "Formats a number (like 31415) to pi (3.14159)"
-  (concatenate 'string (subseq input 0 1) "." (subseq input 1 (+ 1 how-many))))
+  "Formats a number (like 31415) to pi (3.14159) and add a newline"
+  (concatenate 'string (subseq input 0 1) "." (subseq input 1 (+ 1 how-many)) "~%"))
 
 (when (equal (second *posix-argv*) NIL)
-  (print "Please leave a command line value for the number of digits you want")
+  (print "Please leave a command line value for the number of digits you want~%")
   (quit))
 (defvar *answer* (parse-integer (second *posix-argv*)))
 
