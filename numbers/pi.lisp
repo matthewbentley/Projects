@@ -1,4 +1,5 @@
 ;;;;Calculates the value of pi to an arbitrary number of digets
+;;;;Takes the number of decimals (after the "3.") from the first command line argument
 ;;;;Using Machin's formula (pi/4 = 4 arccot(5) - arccot(293))
 ;;;;To calculate arccot: arccot(x)= 1/x - 1/3x^3 + 1/5x^5 - 1/7x^7 ...
 
@@ -30,7 +31,16 @@
 	 (betterpi (* 4 (- (* 4 (arccot 5 unity)) (arccot 239 unity)))))
     (floor (/ betterpi (expt 10 10)))))
 
+(defun piformat (how-many input)
+  "Formats a number (like 31415) to pi (3.14159)"
+  (concatenate 'string (subseq input 0 1) "." (subseq input 1 (+ 1 how-many))))
+
 (when (equal (second *posix-argv*) NIL)
+  (print "Please leave a command line value for the number of digits you want")
   (quit))
 (defvar *answer* (parse-integer (second *posix-argv*)))
-(print (pidigits *answer*))
+
+(print
+ (piformat *answer*
+  (write-to-string
+   (pidigits *answer*))))
