@@ -35,12 +35,10 @@
   "Formats a number (like 31415) to pi (3.14159) and add a newline"
   (concatenate 'string (subseq input 0 1) "." (subseq input 1 (+ 1 how-many))))
 
+(defvar *number* (parse-integer (second *posix-argv*)))
 (when (equal (second *posix-argv*) NIL)
   (print "Please leave a command line value for the number of digits you want")
   (quit))
-(defvar *answer* (parse-integer (second *posix-argv*)))
 
-(print
- (piformat *answer*
-  (write-to-string
-   (pidigits *answer*))))
+(print (piformat *number* (write-to-string (pidigits *number*))))
+
