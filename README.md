@@ -31,7 +31,7 @@ Numbers
 
 **Next Prime Number** – Have the program find prime numbers until the user chooses to stop asking for the next one. EDIT: find the nth prime number. DONE
 
-**Find Cost of Tile to Cover W x H Floor** – Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
+**Find Cost of Tile to Cover W x H Floor** – Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user. DONE
 
 **Mortgage Calculator** – Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan.
 
